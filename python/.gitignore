@@ -1,3 +1,4 @@
 .galaxy-roles
+.python-version
 .vagrant
 *.retry
