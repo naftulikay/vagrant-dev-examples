@@ -1,0 +1,7 @@
+---
+- name: build
+  hosts: all
+  become: true
+  roles:
+    - role: vagrant-node-dev
+      node_version: 8.9.4
