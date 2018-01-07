@@ -1,3 +1,9 @@
 .ansible
 .vagrant
 *.retry
+
+# Cargo Build Directory
+/target
+
+# rustfmt Backup Files
+/**/*.rs.bk
