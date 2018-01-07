@@ -1,6 +1,25 @@
 # vagrant-dev-examples
 
-Project examples using my Ansible Vagrant development environment roles.
+Project examples using Ansible Vagrant development environment roles.
+
+Each Ansible role used is continuously integrated and tested using [Goss][goss] and Docker VMs to validate support for
+Ubuntu 14.04, Ubuntu 16.04, and CentOS 7. For more information, see the roles projects linked below.
+
+## Supported Languages
+
+ - [Go](./go) ([role][vagrant-go-dev])
+ - [Java/Scala/JVM](./java) ([role][vagrant-java-dev])
+ - [Node.js](./node) ([role][vagrant-node-dev])
+ - [Python](./python) ([role][vagrant-python-dev])
+ - [Ruby](./ruby) ([role][vagrant-ruby-dev])
+ - [Rust](./rust) ([role][vagrant-rust-dev])
+
+For setups like, e.g. JRuby, these roles can be stacked to provide a combined development environment.
+
+## Supported Operating Systems
+
+As mentioned, Ubuntu 14.04, 16.04, and CentOS 7 are officially supported by these roles, so choose the Vagrant box
+that is the most similar to your deployment environment.
 
 ## Getting Started
 
@@ -14,6 +33,9 @@ Each directory shares the same core files, which are explained presently:
  - `Vagrantfile`: A flexible Vagrantfile configured for the project.
 
 Please feel free to dig through these files and ask questions if anything is unclear.
+
+Once all has been brought down and configured, `vagrant up` will yield a VM with batteries included for your given
+development language(s).
 
 ## Differences
 
@@ -44,9 +66,21 @@ index e760c5c..3dcc8b1 100644
 +      python_version: 2.7.5
 ```
 
+Go is probably the most distinct setup, requiring one more line to specify the Go package URL.
+
 ## License
 
 Licensed at your discretion under either:
 
  - MIT (`./LICENSE-MIT`)
  - Apache License, Version 2.0 (`./LICENSE-APACHE`)
+
+---
+
+ [vagrant-go-dev]: https://github.com/naftulikay/ansible-role-vagrant-go-dev
+ [vagrant-java-dev]: https://github.com/naftulikay/ansible-role-vagrant-java-dev
+ [vagrant-node-dev]: https://github.com/naftulikay/ansible-role-vagrant-node-dev
+ [vagrant-python-dev]: https://github.com/naftulikay/ansible-role-vagrant-python-dev
+ [vagrant-ruby-dev]: https://github.com/naftulikay/ansible-role-vagrant-ruby-dev
+ [vagrant-rust-dev]: https://github.com/naftulikay/ansible-role-vagrant-rust-dev
+ [goss]: https://github.com/aelsabbahy/goss
