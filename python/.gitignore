@@ -1,4 +1,4 @@
-.galaxy-roles
+.ansible
 .python-version
 .vagrant
 *.retry
