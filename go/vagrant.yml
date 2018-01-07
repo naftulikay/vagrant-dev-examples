@@ -1,0 +1,8 @@
+---
+- name: build
+  hosts: all
+  become: true
+  roles:
+    - role: vagrant-go-dev
+      go_package: github.com/naftulikay/vagrant-dev-examples
+      go_version: 1.9.2

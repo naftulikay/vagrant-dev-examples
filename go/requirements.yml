@@ -1,0 +1,3 @@
+---
+- name: vagrant-go-dev
+  src: naftulikay.vagrant-go-dev
