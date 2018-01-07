@@ -1,4 +1,4 @@
-.galaxy-roles
+.ansible
 .ruby-version
 .vagrant
 *.retry
