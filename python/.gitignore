@@ -2,3 +2,19 @@
 .python-version
 .vagrant
 *.retry
+
+# setuptools and zc.buildout ignores
+/.eggs/
+/.installed.cfg
+
+/bin/
+/build/
+/develop-eggs/
+/dist/
+/eggs/
+/parts/
+/src/*.egg-info
+
+# Compiled Python Files
+*.py[cod]
+__pycache__
