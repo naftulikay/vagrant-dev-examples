@@ -7,6 +7,8 @@ Ubuntu 14.04, Ubuntu 16.04, and CentOS 7. For more information, see the roles pr
 
 ## Supported Languages
 
+Officially supported are the six most popular programming languages at the moment:
+
  - [Go](./go) ([role][vagrant-go-dev])
  - [Java/Scala/JVM](./java) ([role][vagrant-java-dev])
  - [Node.js](./node) ([role][vagrant-node-dev])
@@ -15,6 +17,12 @@ Ubuntu 14.04, Ubuntu 16.04, and CentOS 7. For more information, see the roles pr
  - [Rust](./rust) ([role][vagrant-rust-dev])
 
 For setups like, e.g. JRuby, these roles can be stacked to provide a combined development environment.
+
+Another "mixin" role that should prove to be useful can be found in the [Docker](./docker) ([role][vagrant-docker])
+project. Again, simply mix and match roles applicable to your development needs.
+
+If you would like to add other languages, I'm happy to work with you to build the Ansible roles and tests. Please open
+an issue on this project and we will coordinate.
 
 ## Supported Operating Systems
 
@@ -83,4 +91,5 @@ Licensed at your discretion under either:
  [vagrant-python-dev]: https://github.com/naftulikay/ansible-role-vagrant-python-dev
  [vagrant-ruby-dev]: https://github.com/naftulikay/ansible-role-vagrant-ruby-dev
  [vagrant-rust-dev]: https://github.com/naftulikay/ansible-role-vagrant-rust-dev
+ [vagrant-docker]: https://github.com/naftulikay/ansible-role-vagrant-docker
  [goss]: https://github.com/aelsabbahy/goss
